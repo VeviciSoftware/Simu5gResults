@@ -1,0 +1,154 @@
+{
+    "test-run1" : {
+        "itervars" : {
+            "potencia" : "5"
+        },
+        "config" : [
+            { "*.numUe" : "5" }
+        ],
+        "scalars" : [
+            {
+                "module" : "Rede1_4cells.ue[0].app[0]",
+                "name" : "voIPReceivedThroughput:mean",
+                "value" : 2724.3059198283,
+                "attributes" : {
+                    "recordingmode" : "mean",
+                    "source" : "voIPReceivedThroughput",
+                    "title" : "Throughput received at the application level, mean",
+                    "unit" : "Bps"
+                }
+            },
+            {
+                "module" : "Rede1_4cells.ue[1].app[0]",
+                "name" : "voIPReceivedThroughput:mean",
+                "value" : 4170.1772543786,
+                "attributes" : {
+                    "recordingmode" : "mean",
+                    "source" : "voIPReceivedThroughput",
+                    "title" : "Throughput received at the application level, mean",
+                    "unit" : "Bps"
+                }
+            },
+            {
+                "module" : "Rede1_4cells.ue[2].app[0]",
+                "name" : "voIPReceivedThroughput:mean",
+                "value" : 4609.0446852272,
+                "attributes" : {
+                    "recordingmode" : "mean",
+                    "source" : "voIPReceivedThroughput",
+                    "title" : "Throughput received at the application level, mean",
+                    "unit" : "Bps"
+                }
+            },
+            {
+                "module" : "Rede1_4cells.ue[3].app[0]",
+                "name" : "voIPReceivedThroughput:mean",
+                "value" : 3773.9361833632,
+                "attributes" : {
+                    "recordingmode" : "mean",
+                    "source" : "voIPReceivedThroughput",
+                    "title" : "Throughput received at the application level, mean",
+                    "unit" : "Bps"
+                }
+            },
+            {
+                "module" : "Rede1_4cells.ue[4].app[0]",
+                "name" : "voIPReceivedThroughput:mean",
+                "value" : 3901.6077702647,
+                "attributes" : {
+                    "recordingmode" : "mean",
+                    "source" : "voIPReceivedThroughput",
+                    "title" : "Throughput received at the application level, mean",
+                    "unit" : "Bps"
+                }
+            },
+            {
+                "module" : "Rede1_4cells.ue[5].app[0]",
+                "name" : "voIPReceivedThroughput:mean",
+                "value" : 2689.9772196964,
+                "attributes" : {
+                    "recordingmode" : "mean",
+                    "source" : "voIPReceivedThroughput",
+                    "title" : "Throughput received at the application level, mean",
+                    "unit" : "Bps"
+                }
+            }
+        ]
+    },
+    "test-run2": {
+        "itervars" : {
+            "potencia" : "10"
+        },
+        "config" : [
+            { "*.numUe" : "5" }
+        ],
+        "scalars" : [
+            {
+                "module" : "Rede1_4cells.ue[0].app[0]",
+                "name" : "voIPReceivedThroughput:mean",
+                "value" : 3218.46852288,
+                "attributes" : {
+                    "recordingmode" : "mean",
+                    "source" : "voIPReceivedThroughput",
+                    "title" : "Throughput received at the application level, mean",
+                    "unit" : "Bps"
+                }
+            },
+            {
+                "module" : "Rede1_4cells.ue[1].app[0]",
+                "name" : "voIPReceivedThroughput:mean",
+                "value" : 4508.6198406026,
+                "attributes" : {
+                    "recordingmode" : "mean",
+                    "source" : "voIPReceivedThroughput",
+                    "title" : "Throughput received at the application level, mean",
+                    "unit" : "Bps"
+                }
+            },
+            {
+                "module" : "Rede1_4cells.ue[2].app[0]",
+                "name" : "voIPReceivedThroughput:mean",
+                "value" : 3064.4931031618,
+                "attributes" : {
+                    "recordingmode" : "mean",
+                    "source" : "voIPReceivedThroughput",
+                    "title" : "Throughput received at the application level, mean",
+                    "unit" : "Bps"
+                }
+            },
+            {
+                "module" : "Rede1_4cells.ue[3].app[0]",
+                "name" : "voIPReceivedThroughput:mean",
+                "value" : 4205.3497234756,
+                "attributes" : {
+                    "recordingmode" : "mean",
+                    "source" : "voIPReceivedThroughput",
+                    "title" : "Throughput received at the application level, mean",
+                    "unit" : "Bps"
+                }
+            },
+            {
+                "module" : "Rede1_4cells.ue[4].app[0]",
+                "name" : "voIPReceivedThroughput:mean",
+                "value" : 3185.3539242757,
+                "attributes" : {
+                    "recordingmode" : "mean",
+                    "source" : "voIPReceivedThroughput",
+                    "title" : "Throughput received at the application level, mean",
+                    "unit" : "Bps"
+                }
+            },
+            {
+                "module" : "Rede1_4cells.ue[5].app[0]",
+                "name" : "voIPReceivedThroughput:mean",
+                "value" : 4731.458842929,
+                "attributes" : {
+                    "recordingmode" : "mean",
+                    "source" : "voIPReceivedThroughput",
+                    "title" : "Throughput received at the application level, mean",
+                    "unit" : "Bps"
+                }
+            }
+        ]
+    }
+}
