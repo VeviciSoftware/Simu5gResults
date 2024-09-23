@@ -5,25 +5,24 @@ import matplotlib.pyplot as plt
 with open('data/SINR/teste.json', 'r') as file:
     data = json.load(file)
 
-# Inicializar listas para armazenar potências e somas de vazão
+# Inicializar listas para armazenar potências e valores de SINR
 potencias = []
-somas_vazao = []
+sinr_values = []
 
 # Iterar sobre cada teste
 for test_run, test_data in data.items():
     potencia = int(test_data['itervars']['potencia'])
-    total_vazao = sum(scalar['value'] for scalar in test_data['scalars'])
-    
-    potencias.append(potencia)
-    somas_vazao.append(total_vazao)
-    media_vazao = sum(somas_vazao) / len(somas_vazao)   # Média 
+    for scalar in test_data['scalars']:
+        if scalar['name'] == 'measuredSinrDl:mean':
+            sinr_value = scalar['value']
+            potencias.append(potencia)
+            sinr_values.append(sinr_value)
 
-# Gerar o gráfico em formato de barras
+# Gerar o gráfico de dispersão
 plt.figure(figsize=(10, 6))
-plt.bar(potencias, media_vazao, color='blue')
+plt.scatter(potencias, sinr_values, color='blue')
 plt.xlabel('Potência')
-plt.ylabel('Vazão Total (Mbps)')
-plt.title('Potência vs Média de Vazão')
+plt.ylabel('SINR (dB)')
+plt.title('Potência vs Qualidade de Sinal (SINR)')
 plt.grid(True)
 plt.show()
-
